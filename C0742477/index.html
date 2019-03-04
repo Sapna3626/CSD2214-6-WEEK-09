@@ -6,7 +6,7 @@
     <link href="css/default.css" rel="stylesheet" />
 </head>
 <body>
-    <div>Content goes here!bgfhgfh</div>
+    <div>Content goes here!</div>
     <script src="js/main.js"></script>
     <script>
         
@@ -17,18 +17,20 @@
             stepdown: 11,
             stopvalue: 119,
             getSum: function () {
-                var sum = 0;
-                for (var i = this.starter; i >= this.stopvalue;) {
-                    sum = sum + i;
+                
+                for (var i = this.starter; i >= this.stopvalue;)
+                {
+                    this.sum += i;
                     i -= this.stepdown;
                 }
                 return this.sum;
-                document.write("Sum is:" + sum);
+               
             }
 
         }
-        addNumbers.getSum();
+        document.write(addNumbers.getSum());
 
     </script>
 </body>
 </html>
+
