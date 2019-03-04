@@ -6,31 +6,29 @@
     <link href="css/default.css" rel="stylesheet" />
 </head>
 <body>
-    <div>Content goes here!</div>
+    <div>For loop to add numbers!</div>
     <script src="js/main.js"></script>
     <script>
         
         
         let addNumbers = {
-            sum: 0,
-            starter: 1109,
-            stepdown: 11,
-            stopvalue: 119,
-            getSum: function () {
-                
-                for (var i = this.starter; i >= this.stopvalue;)
+            
+            getSum: function (start, end, step)
+            {
+                let sum = 0;
+
+                for (i = this.starter; i >= this.stopvalue;)
                 {
                     this.sum += i;
                     i -= this.stepdown;
                 }
                 return this.sum;
-               
+
             }
 
         };
-        document.write(addNumbers.getSum());
+        document.write(addNumbers.getSum(1109,119,11));
 
     </script>
 </body>
 </html>
-
